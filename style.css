@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0cap;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(233, 47%, 7%);
+    padding: 0em 13em;
+}
+
+main{
+    display: flex;
+    background: hsl(244, 38%, 16%);
+    margin-bottom: 10px;
+}
+
+.advert{
+    padding: 4em;
+}
+
+.advert h1{
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: hsl(0, 0%, 100%);
+}
+
+.advert h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+.para{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    line-height: 1.5em;
+    margin-bottom: 20%;
+}
+
+.stats{
+    color:hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    justify-content: space-between;
+    padding-right:2em;
+}
+
+.stats h2{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.stats p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+}
+
+img{
+    /* filter: invert(58%) sepia(69%) saturate(5307%) hue-rotate(246deg) brightness(94%) contrast(82%); */
+    /* filter: invert(5%) sepia(45%) saturate(4129%) hue-rotate(237deg) brightness(95%) contrast(90%); */
+    filter: invert(3%) sepia(43%) saturate(3848%) hue-rotate(225deg) brightness(75%) contrast(97%);
+}
+
+footer{
+    color: hsl(0, 0%, 100%);
+}
+
+footer a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
