@@ -19,6 +19,9 @@ body{
     background: hsl(233, 47%, 7%);
     padding: 0em 13em;
 }
+.mobile-image{
+    display: none;
+}
 
 main{
     display: flex;
@@ -71,7 +74,8 @@ main{
     font-size: 12px;
 }
 
-img{
+.desktop-image{
+    display: flex;
     /* filter: invert(58%) sepia(69%) saturate(5307%) hue-rotate(246deg) brightness(94%) contrast(82%); */
     /* filter: invert(5%) sepia(45%) saturate(4129%) hue-rotate(237deg) brightness(95%) contrast(90%); */
     filter: invert(3%) sepia(43%) saturate(3848%) hue-rotate(225deg) brightness(75%) contrast(97%);
@@ -84,4 +88,32 @@ footer{
 footer a{
     text-decoration: none;
     color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+@media (max-width: 950px) {
+    .mobile-image{
+        display: block;
+        filter: invert(3%) sepia(43%) saturate(3848%) hue-rotate(225deg) brightness(75%) contrast(97%);
+    }
+    .desktop-image{
+        display: none;
+    }
+    main{
+        display:flex;
+        flex-direction: column;
+        max-width: 400px;
+        text-align: center;
+        border-radius: 7px;
+    }
+    .stats{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .stats div{
+        margin-bottom: 20px
+    }
 }
